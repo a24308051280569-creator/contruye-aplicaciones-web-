@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+    table { width: 100%; max-width: 750px; border-collapse: collapse; text-align: center; }
+    th { padding: 10px; }
+    th span { background: #eef2ff; color: #1e3a8a; padding: 8px 16px; border-radius: 20px; }
+    td { padding: 15px; border-bottom: 1px solid #eee; }
+    .type { font-weight: bold; font-style: italic; font-size: 1.1em; }
+    
+    /* Colores por nivel */
+    .red .type { color: #d9383a; }  .red td { color: #e06d6e; }
+    .orange .type { color: #e67e22; } .orange td { color: #f39c12; }
+    .yellow .type { color: #d4ac0d; } .yellow td { color: #f1c40f; }
+    .green .type { color: #27ae60; }  .green td { color: #52be80; }
+    .blue .type { color: #1f618d; }   .blue td { color: #5dade2; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th><span>Tipo de atención</span></th>
+      <th><span>Área de atención</span></th>
+      <th><span>Tiempo de espera</span></th>
+    </tr>
+    <tr class="red">
+      <td class="type">Reanimación</td>
+      <td>Área de reanimación</td>
+      <td>Inmediato<br>hasta 3 min</td>
+    </tr>
+    <tr class="orange">
+      <td class="type">Emergencia</td>
+      <td>Área de reanimación</td>
+      <td>Inmediato<br>hasta 10 min</td>
+    </tr>
+    <tr class="yellow">
+      <td class="type">Urgencia</td>
+      <td>Consultorio de primer contacto</td>
+      <td>Hasta 30 min</td>
+    </tr>
+    <tr class="green">
+      <td class="type">Urgencia menor</td>
+      <td>Consultorio de primer contacto o UMF</td>
+      <td>Hasta 120 min</td>
+    </tr>
+    <tr class="blue">
+      <td class="type">Sin urgencia</td>
+      <td>Consultorio de primer contacto o UMF</td>
+      <td>Hasta 180 min</td>
+    </tr>
+  </table>
+
+</body>
+</html>
