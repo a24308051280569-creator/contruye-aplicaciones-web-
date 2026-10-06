@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillStudio - Inicio</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #121212; color: #fff; text-align: center; }
+    
+    /* Encabezado y Navegación principal */
+    header { background: #1f1f1f; padding: 15px; border-bottom: 2px solid #00e676; }
+    header h2 { margin: 0 0 10px; color: #00e676; }
+    nav a { color: #aaa; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a.active, nav a:hover { color: #00e676; }
+
+    /* Cuerpo principal */
+    main { max-width: 600px; margin: 30px auto; padding: 0 15px; }
+    
+    /* Banners promocionales sencillos */
+    .banner { background: #1f1f1f; padding: 20px; border-radius: 8px; border: 1px solid #333; margin-bottom: 20px; }
+    .btn { display: inline-block; padding: 10px 15px; background: #00e676; color: #000; text-decoration: none; font-weight: bold; border-radius: 4px; margin-top: 10px; }
+
+    /* Lista de cursos en grilla limpia */
+    .courses { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+    .card { background: #1a1a1a; padding: 15px; border-radius: 6px; border: 1px solid #2a2a2a; text-align: left; }
+    
+    footer { padding: 15px; color: #666; font-size: 12px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con menú para ir a Formulario -->
+  <header>
+    <h2>SkillStudio</h2>
+    <nav>
+      <a href="index.html" class="active">Inicio</a> | 
+      <a href="registro.html">Formulario</a>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main>
+    <div class="banner">
+      <h3 style="margin: 0 0 5px;">Aprende habilidades tech hoy</h3>
+      <p style="color: #aaa; font-size: 14px; margin: 0;">Inscríbete a los mejores cursos interactivos.</p>
+      <a href="registro.html" class="btn">Ir al Formulario</a>
+    </div>
+
+    <h3>Cursos Destacados</h3>
+    <div class="courses">
+      <div class="card">
+        <strong style="color: #00e676;">Análisis de Datos</strong>
+        <p style="color: #888; font-size: 12px; margin: 5px 0 0;">Certificado Profesional</p>
+      </div>
+      <div class="card">
+        <strong style="color: #00e676;">Desarrollo Web</strong>
+        <p style="color: #888; font-size: 12px; margin: 5px 0 0;">Nivel Principiante</p>
+      </div>
+      <div class="card">
+        <strong style="color: #00e676;">Python e IA</strong>
+        <p style="color: #888; font-size: 12px; margin: 5px 0 0;">Especialización</p>
+      </div>
+      <div class="card">
+        <strong style="color: #00e676;">Diseño UX/UI</strong>
+        <p style="color: #888; font-size: 12px; margin: 5px 0 0;">Curso Práctico</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 SkillStudio.
+  </footer>
+
+</body>
+</html>
